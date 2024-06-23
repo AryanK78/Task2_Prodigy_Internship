@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    top: 25px;
+}
+
+ h1{
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, rgb(82, 82, 209), rgb(235, 50, 235), rgb(82, 82, 209)) 1;
+    
+
+}
+.container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* position: relative;
+    left: 50px; */
+}
+
+.stopwatch {
+    position: relative;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    bottom: 25px;
+    text-align: center;
+    left: 65px;
+}
+.circle {
+    width: 270px;
+    height: 270px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    font-size: 2rem;
+    color: white;
+}
+
+.controls {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    outline: none;
+    background-color: black;
+    color: white;
+    outline: none; 
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* right: 40px; */
+}
+
+#pause{
+    min-width: 125px;
+}
+
+.controls button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.2s linear;
+}
+
+#lapTimes {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#lapTimes li{
+    margin: 10px 0px;
+}
+
+@media (max-width: 600px) {
+    #display {
+        font-size: 36px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .stopwatch {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #display {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
